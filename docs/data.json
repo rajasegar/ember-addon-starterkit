@@ -1,0 +1,14 @@
+{
+    "project": {
+        "name": "ember-addon-starterkit",
+        "description": "The default blueprint for ember-cli addons.",
+        "url": "https://github.com/rajasegar/ember-stylish-buttons",
+        "version": "v0.1.1"
+    },
+    "files": {},
+    "modules": {},
+    "classes": {},
+    "elements": {},
+    "classitems": [],
+    "warnings": []
+}

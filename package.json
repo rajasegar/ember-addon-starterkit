@@ -1,17 +1,21 @@
 {
   "name": "ember-addon-starterkit",
   "version": "0.1.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Starter kit for creating and publishing new Ember addons with all batteries included.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "addon",
+    "starterkit",
+    "boilerplate",
+    "ember"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Rajasegar Chandran",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/rajasegar/ember-addon-starterkit",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
@@ -49,6 +53,7 @@
     "node": ">= 4"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoUrl": "https://rajasegar.github.io/ember-addon-starterkit/"
   }
 }

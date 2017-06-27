@@ -1,6 +1,6 @@
 # ember-addon-starterkit
 
-This README outlines the details of collaborating on this Ember addon.
+Starter kit for creating new Ember addons with all batteries included.
 
 ## Installation
 

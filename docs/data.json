@@ -3,7 +3,7 @@
         "name": "ember-addon-starterkit",
         "description": "The default blueprint for ember-cli addons.",
         "url": "https://github.com/rajasegar/ember-stylish-buttons",
-        "version": "v0.1.1"
+        "version": "v0.1.2"
     },
     "files": {},
     "modules": {},

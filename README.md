@@ -42,6 +42,10 @@ ember release
 * `npm install`
 * `bower install`
 
+## Addon Demo
+The demo application for this addon is published into **gh-pages** from the dummy app inside and is available 
+[here](https://rajasegar.github.io/ember-addon-starterkit/)
+
 ## Running
 
 * `ember serve`

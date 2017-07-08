@@ -1,6 +1,7 @@
 /* eslint-env node */
 module.exports = {
   description: 'Starterkit for creating and publishing Ember addons',
+  normalizeEntityName: function() {}, // no-op since we're just adding dependencies
 
   afterInstall: function() {
     // Add addons to package.json and run defaultBlueprint

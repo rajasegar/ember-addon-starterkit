@@ -1,5 +1,11 @@
 # ember-addon-starterkit
 
+[![Build Status](https://travis-ci.org/rajasegar/ember-addon-starterkit.svg?branch=master)](https://travis-ci.org/rajasegar/ember-addon-starterkit) 
+[![npm](https://img.shields.io/npm/dm/ember-addon-starterkit.svg)](https://www.npmjs.com/package/ember-addon-starterkit)
+[![npm version](http://img.shields.io/npm/v/ember-addon-starterkit.svg?style=flat)](https://npmjs.org/package/ember-addon-starterkit "View this project on npm")
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+[![EmberObserver](http://emberobserver.com/badges/ember-addon-starterkit.svg?branch=master)](http://emberobserver.com/addons/ember-addon-starterkit)
+
 Starter kit for creating and publishing new Ember addons with all batteries included.
 
 ## Installation

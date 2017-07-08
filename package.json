@@ -1,6 +1,6 @@
 {
   "name": "ember-addon-starterkit",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Starter kit for creating and publishing new Ember addons with all batteries included.",
   "keywords": [
     "ember-addon",

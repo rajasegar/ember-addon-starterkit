@@ -54,6 +54,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoUrl": "https://rajasegar.github.io/ember-addon-starterkit/"
+    "demoURL": "https://rajasegar.github.io/ember-addon-starterkit/"
   }
 }

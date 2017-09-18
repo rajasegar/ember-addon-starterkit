@@ -19,7 +19,8 @@ module.exports = {
       packages: [
         {name: 'ember-cli-release'},
         {name: 'ember-cli-github-pages'},
-        {name: 'ember-cli-yuidoc'}
+        {name: 'ember-cli-yuidoc'},
+        {name: 'ember-cli-code-coverage'}
       ]
     })
     .then(() => {

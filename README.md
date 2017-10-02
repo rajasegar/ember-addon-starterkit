@@ -3,7 +3,8 @@
 [![Build Status](https://travis-ci.org/rajasegar/ember-addon-starterkit.svg?branch=master)](https://travis-ci.org/rajasegar/ember-addon-starterkit) 
 [![npm](https://img.shields.io/npm/dm/ember-addon-starterkit.svg)](https://www.npmjs.com/package/ember-addon-starterkit)
 [![npm version](http://img.shields.io/npm/v/ember-addon-starterkit.svg?style=flat)](https://npmjs.org/package/ember-addon-starterkit "View this project on npm")
-[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+[![dependencies Status](https://david-dm.org/rajasegar/ember-addon-starterkit/status.svg)](https://david-dm.org/rajasegar/ember-addon-starterkit)
+[![devDependencies Status](https://david-dm.org/rajasegar/ember-addon-starterkit/dev-status.svg)](https://david-dm.org/rajasegar/ember-addon-starterkit?type=dev)
 [![EmberObserver](http://emberobserver.com/badges/ember-addon-starterkit.svg?branch=master)](http://emberobserver.com/addons/ember-addon-starterkit)
 
 Starter kit for creating and publishing new Ember addons with all batteries included.
@@ -60,11 +61,18 @@ only one command:
 ember release
 ```
 
+For accepting all commands with an yes
+```shell
+ember release --yes
+```
+
 ## Features
 * Release Automation
 * npm Package Publishing
 * Documentation
 * Demo Application
+* Test helpers
+* Code coverage
 
 ## Batteries
 ### ember-cli-release
@@ -82,6 +90,18 @@ This is an ember-cli addon for generate html documentation from YUIDoc comments 
 ### yuidoc-ember-theme
 An EmberJS based YUIDoc theme
 [yuidoc-ember-theme](https://github.com/offirgolan/yuidoc-ember-theme)
+
+### ember-cli-code-coverage
+Code coverage for ember apps using Istanbul 
+Find more info [here](https://github.com/kategengler/ember-cli-code-coverage)
+
+### ember-native-dom-helpers
+Test helpers for your integration tests that fire native events 
+Find more info [here](https://github.com/cibernox/ember-native-dom-helpers)
+
+### coveralls
+Coveralls.io support. Get the great coverage reporting of coveralls.io and add a cool coverage button ( like the one above ) to your README.
+Find more info [here](https://github.com/nickmerwin/node-coveralls)
 
 ## Addon Demo
 The demo application for this addon is published into **gh-pages** from the dummy app inside and is available 

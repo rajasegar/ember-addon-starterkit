@@ -20,13 +20,15 @@ module.exports = {
         {name: 'ember-cli-release'},
         {name: 'ember-cli-github-pages'},
         {name: 'ember-cli-yuidoc'},
-        {name: 'ember-cli-code-coverage'}
+        {name: 'ember-cli-code-coverage'},
+        {name: 'ember-native-dom-helpers'}
       ]
     })
     .then(() => {
       // Add npm packages to package.json
       return this.addPackagesToProject([
-        {name: 'yuidoc-ember-theme'}
+        {name: 'yuidoc-ember-theme'},
+        {name: 'coveralls'},
       ]);
     })
     .then(() => {

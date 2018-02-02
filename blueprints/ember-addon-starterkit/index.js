@@ -1,10 +1,23 @@
 /* jshint node:true */
 var execSync = require('child_process').execSync;
+var path = require('path');
 
 /* eslint-env node */
 module.exports = {
   description: 'Starterkit for creating and publishing Ember addons',
   normalizeEntityName: function() {}, // no-op since we're just adding dependencies
+
+  fileMapTokens: function() {
+    return {
+      __root__: function(options) {
+        if (options.inAddon) {
+          return path.join('tests', 'dummy');
+        }
+
+        return '/';
+      }
+    };
+  },
 
   runCommand: function(command) {
     this.ui.writeLine('running: ' + command); // eslint-disable-line

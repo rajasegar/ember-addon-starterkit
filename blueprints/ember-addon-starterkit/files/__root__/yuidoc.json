@@ -1,0 +1,20 @@
+{
+  "name": "ember-addon-starterkit",
+  "description": "The default blueprint for ember-cli addons.",
+  "url": "https://github.com/rajasegar/ember-stylish-buttons",
+  "version": "0.0.0",
+  "options": {
+    "paths": [
+      "addon"
+    ],
+    "exclude": "vendor",
+    "outdir": "docs",
+    "linkNatives": true,
+    "quiet": true,
+    "parseOnly": false,
+    "lint": false,
+    "enabledEnvironments": ["development","production"],
+    "themedir": "node_modules/yuidoc-ember-theme",
+    "helpers": ["node_modules/yuidoc-ember-theme/helpers/helpers.js"]
+  }
+}

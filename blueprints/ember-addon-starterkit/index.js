@@ -1,6 +1,12 @@
 /* jshint node:true */
 var execSync = require('child_process').execSync;
 var path = require('path');
+const stringifyAndNormalizePath = require.resolve('ember-cli/lib/utilities/stringify-and-normalize', {
+  paths: [ yarnGlobalModulesDir, globalModulesDir ]
+});
+const stringifyAndNormalize = require(stringifyAndNormalizePath);
+const sortPackageJson = require('sort-package-json');
+
 
 /* eslint-env node */
 module.exports = {
@@ -25,36 +31,23 @@ module.exports = {
     this.ui.writeLine(output); // eslint-disable-line
   },
 
+  updatePackageJson(contents) {
+    contents = JSON.parse(contents);
+
+    // Add `coveralls` to devDependencies by default
+    contents.devDependencies['coveralls'] = '^3.1.0';
+
+    return stringifyAndNormalize(sortPackageJson(contents));
+  },
+
   afterInstall: function() {
     // Add addons to package.json and run defaultBlueprint
     return this.addAddonsToProject({
       // a packages array defines the addons to install
       packages: [
-        {name: 'ember-cli-release'},
-        {name: 'ember-cli-github-pages'},
-        {name: 'ember-cli-yuidoc'},
         {name: 'ember-cli-code-coverage'},
-        {name: 'ember-native-dom-helpers'}
+        {name: 'ember-auto-import'}
       ]
-    })
-    .then(() => {
-      // Add npm packages to package.json
-      return this.addPackagesToProject([
-        {name: 'yuidoc-ember-theme'},
-        {name: 'coveralls'},
-      ]);
-    })
-    .then(() => {
-      // Committing github-pages addon changes
-      this.runCommand('git add -A && git commit -m "Added ember-cli-github-pages addon"');
-
-      // Creating gh-pages branch
-      this.runCommand('git checkout --orphan gh-pages');
-
-      // Cleaning up branch and committing changes
-      this.runCommand('rm -rf `bash -c "ls -a | grep -vE \'\.gitignore|\.git|node_modules|bower_components|(^[.]{1,2}/?$)\'"` && git add -A && git commit -m "initial gh-pages commit"');
-
-      return true;
     });
   }
 };

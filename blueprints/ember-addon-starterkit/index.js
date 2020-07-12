@@ -1,13 +1,6 @@
 /* jshint node:true */
 var execSync = require('child_process').execSync;
 var path = require('path');
-const globalModulesDir = require('global-modules');
-const yarnGlobalModulesDir = require('yarn-global-modules')();
-const stringifyAndNormalizePath = require.resolve('ember-cli/lib/utilities/stringify-and-normalize', {
-  paths: [ yarnGlobalModulesDir, globalModulesDir ]
-});
-const stringifyAndNormalize = require(stringifyAndNormalizePath);
-const sortPackageJson = require('sort-package-json');
 
 
 /* eslint-env node */
@@ -33,15 +26,6 @@ module.exports = {
     this.ui.writeLine(output); // eslint-disable-line
   },
 
-  updatePackageJson(contents) {
-    contents = JSON.parse(contents);
-
-    // Add `coveralls` to devDependencies by default
-    contents.devDependencies['coveralls'] = '^3.1.0';
-
-    return stringifyAndNormalize(sortPackageJson(contents));
-  },
-
   afterInstall: function() {
     // Add addons to package.json and run defaultBlueprint
     return this.addAddonsToProject({
@@ -50,6 +34,15 @@ module.exports = {
         {name: 'ember-cli-code-coverage'},
         {name: 'ember-auto-import'}
       ]
-    });
+    })
+      .then(() => {
+        // Add npm packages to package.json
+        return this.addPackagesToProject([
+          {name: 'coveralls'},
+          {name: 'semantic-release'},
+          {name: '@semantic-release/changelog'},
+          {name: '@semantic-release/git'},
+        ]);
+      });
   }
 };

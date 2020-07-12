@@ -1,4 +1,5 @@
-# ember-addon-starterkit
+ember-addon-starterkit
+==============================================================================
 
 [![Build Status](https://travis-ci.org/rajasegar/ember-addon-starterkit.svg?branch=master)](https://travis-ci.org/rajasegar/ember-addon-starterkit) 
 [![npm](https://img.shields.io/npm/dm/ember-addon-starterkit.svg)](https://www.npmjs.com/package/ember-addon-starterkit)
@@ -107,19 +108,32 @@ Find more info [here](https://github.com/nickmerwin/node-coveralls)
 The demo application for this addon is published into **gh-pages** from the dummy app inside and is available 
 [here](https://rajasegar.github.io/ember-addon-starterkit/)
 
-## Running
+* Ember.js v3.12 or above
+* Ember CLI v2.13 or above
+* Node.js v10 or above
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
 
-## Running Tests
+Installation
+------------------------------------------------------------------------------
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+```
+ember install ember-addon-starterkit
+```
 
-## Building
 
-* `ember build`
+Usage
+------------------------------------------------------------------------------
 
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+[Longer description of how to use the addon in apps.]
+
+
+Contributing
+------------------------------------------------------------------------------
+
+See the [Contributing](CONTRIBUTING.md) guide for details.
+
+
+License
+------------------------------------------------------------------------------
+
+This project is licensed under the [MIT License](LICENSE.md).

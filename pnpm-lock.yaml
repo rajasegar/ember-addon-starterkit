@@ -26,9 +26,11 @@ devDependencies:
   ember-try: 1.4.0
   eslint-plugin-ember: 7.13.0
   eslint-plugin-node: 11.1.0
+  global-modules: 2.0.0
   loader.js: 4.7.0
   qunit-dom: 1.2.0
   sort-package-json: 1.44.0
+  yarn-global-modules: 1.0.1
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.10.4:
@@ -5986,6 +5988,14 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-sKzpEkf11GpOFuw0Zzjzmt4B4UZwjOcG757PPvrfhxcLFbq0wpsgpOqxpxtxFiCG4DtG93M6XRVbF2oGdev7bg==
+  /global-modules/2.0.0:
+    dependencies:
+      global-prefix: 3.0.0
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-NGbfmJBp9x8IxyJSd1P+otYK8vonoJactOogrVfFRIAEY1ukil8RSKDz2Yo7wh1oihl51l/r6W4epkeKJHqL8A==
   /global-prefix/1.0.2:
     dependencies:
       expand-tilde: 2.0.2
@@ -5998,6 +6008,16 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-2/dDxsFJklk8ZVVoy2btMsASLr4=
+  /global-prefix/3.0.0:
+    dependencies:
+      ini: 1.3.5
+      kind-of: 6.0.3
+      which: 1.3.1
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-awConJSVCHVGND6x3tmMaKcQvwXLhjdkmomy2W+Goaui8YPgYgXJZewhg3fWC+DlfqqQuWg8AwqjGTD2nAPVWg==
   /globals/11.12.0:
     engines:
       node: '>=4'
@@ -10627,6 +10647,22 @@ packages:
       node: ^4.5 || 6.* || >= 7.*
     resolution:
       integrity: sha512-Hv9xxHtsJ9228wNhk03xnlDReUuWVvHwM4rIbjdAXYvHLs17xjuyF50N6XXFMN6N0omBaqgOok/MCK3At9fTAg==
+  /yarn-config-directory/1.0.2:
+    dependencies:
+      homedir-polyfill: 1.0.3
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-vSeu9mdbkaQB1ivgQ+hgLWWlPGja+eHRMWe+KmBzNIkfCEqk12T4PKeR19PX/k00A84SqK83o7hCvWCq2iY6jg==
+  /yarn-global-modules/1.0.1:
+    dependencies:
+      yarn-config-directory: 1.0.2
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-KoXxzwjZ65oCETpcd4sUnJZD6iUFrzo4k2p2a4C3h0OXOpjUvDnehNxA4jdmjAI3p4M6UFA+xoDtU8uN5u63Eg==
   /yeast/0.1.2:
     dev: true
     resolution:
@@ -10658,6 +10694,8 @@ specifiers:
   ember-try: ^1.4.0
   eslint-plugin-ember: ^7.7.2
   eslint-plugin-node: ^11.0.0
+  global-modules: ^2.0.0
   loader.js: ^4.7.0
   qunit-dom: ^1.0.0
   sort-package-json: ^1.44.0
+  yarn-global-modules: ^1.0.1

@@ -1,6 +1,8 @@
 /* jshint node:true */
 var execSync = require('child_process').execSync;
 var path = require('path');
+const globalModulesDir = require('global-modules');
+const yarnGlobalModulesDir = require('yarn-global-modules')();
 const stringifyAndNormalizePath = require.resolve('ember-cli/lib/utilities/stringify-and-normalize', {
   paths: [ yarnGlobalModulesDir, globalModulesDir ]
 });
